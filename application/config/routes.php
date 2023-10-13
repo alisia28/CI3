@@ -49,6 +49,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+
+// file ini digunakan untuk mengatur lokasi view pada controller
+// disini controller nya adalah -> file Matakuliah.php
+
+$route['default_controller'] = 'matakuliah';
+$route['ci3/cetak'] = 'matakuliah/cetak';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['ci3/web'] = 'web';
